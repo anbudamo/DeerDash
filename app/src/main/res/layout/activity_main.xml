@@ -1,0 +1,349 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <!--for header of the page-->
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:weightSum="1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.018">
+
+        <ImageView
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:src="@drawable/left_arrow" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Star-Bucks"
+            android:textSize="30dp"
+            android:fontFamily="sans-serif-medium"
+            android:textFontWeight="600"
+            android:layout_marginLeft="15dp"
+            android:layout_marginBottom="4dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Sunday, May 7 at Sunrise ⋅ Completed"
+            android:fontFamily="sans-serif-medium"
+            android:layout_marginLeft="15dp"
+            android:layout_marginBottom="4dp"/>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:src="@drawable/progress_img"
+            android:layout_marginLeft="9.5dp"
+            android:layout_marginRight="9.5dp"/>
+    </LinearLayout>
+
+
+    <!--For horizontal line before "Ordeer Details"-->
+    <LinearLayout
+        android:id="@+id/LinearLayout7"
+        android:layout_width="match_parent"
+        android:layout_height="8dp"
+        android:divider="?android:dividerHorizontal"
+        android:orientation="vertical"
+        android:showDividers="middle"
+        android:weightSum="1"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.236">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:text="1 * Star-bucks original blend coffee"
+            tools:layout_editor_absoluteX="46dp"
+            tools:layout_editor_absoluteY="390dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:text="1 * Star-bucks original blend coffee"
+            tools:layout_editor_absoluteX="46dp"
+            tools:layout_editor_absoluteY="390dp" />
+    </LinearLayout>
+
+    <!--TextView for "Ordeer Details" text-->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="13dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:text="Ordeer Details"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.246" />
+
+    <!--For order details-->
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="19dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:divider="?android:dividerHorizontal"
+        android:orientation="vertical"
+        android:showDividers="middle"
+        android:weightSum="1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.333">
+
+        <!--<TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:text="1 * Star-bucks original blend"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="119dp" />-->
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:text="1 * Calf-uccino Grande (140 Cals)                                  $6.78"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="140dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="12dp"
+            android:text="2 × Glazed Doe-Nut (440 Cals)                                        $3.83"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="160dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="12dp"
+            android:text="1 * Berry Trio Parfait (240 Cals)                                      $4.91"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="160dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:text="1 * Star-bucks original blend coffee"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="119dp" />
+    </LinearLayout>
+
+    <!--For fees and total-->
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="117dp"
+        android:orientation="vertical"
+        android:weightSum="1"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        app:flow_verticalAlign="top"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.569"
+        tools:layout_editor_absoluteX="0dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Subtotal                                                                              $15.52"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="261dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Delivery Fee                                                                       $25.00"
+            tools:layout_editor_absoluteX="-2dp"
+            tools:layout_editor_absoluteY="261dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Service Fee                                                                          $0.00"
+            tools:layout_editor_absoluteX="-2dp"
+            tools:layout_editor_absoluteY="300dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="1 * Estimated Tax                                                               $1.25"
+            tools:layout_editor_absoluteX="-2dp"
+            tools:layout_editor_absoluteY="320dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Dasher Tip                                                                        1 carrot"
+            tools:layout_editor_absoluteX="-2dp"
+            tools:layout_editor_absoluteY="339dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Total                                                                 $41.77 + 1 carrot"
+            android:textStyle="bold"
+            tools:layout_editor_absoluteX="-2dp"
+            tools:layout_editor_absoluteY="359dp" />
+    </LinearLayout>
+
+    <!--Horizontal line between fees and address-->
+    <LinearLayout
+        android:id="@+id/LinearLayout4"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:divider="?android:dividerHorizontal"
+        android:orientation="vertical"
+        android:showDividers="middle"
+        android:weightSum="1"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.675">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:text="1 * Star-bucks original blend coffee"
+            tools:layout_editor_absoluteX="46dp"
+            tools:layout_editor_absoluteY="390dp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:text="1 * Star-bucks original blend coffee"
+            tools:layout_editor_absoluteX="46dp"
+            tools:layout_editor_absoluteY="390dp" />
+    </LinearLayout>
+
+    <!--For address details-->
+    <LinearLayout
+        android:id="@+id/LinearLayout5"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="vertical"
+        android:weightSum="1"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.731">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Address"
+            android:textStyle="bold"
+            tools:layout_editor_absoluteX="-2dp"
+            tools:layout_editor_absoluteY="339dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="2 miles E of Main Waterhole, Serengeti NP, Tanzania" />
+    </LinearLayout>
+
+    <!--Horizontal line between address and buttons-->
+    <LinearLayout
+        android:id="@+id/LinearLayout6"
+        android:layout_width="match_parent"
+        android:layout_height="8dp"
+        android:divider="?android:dividerHorizontal"
+        android:orientation="vertical"
+        android:showDividers="middle"
+        android:weightSum="1"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.768">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:text="1 * Star-bucks original blend coffee"
+            tools:layout_editor_absoluteX="46dp"
+            tools:layout_editor_absoluteY="390dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:text="1 * Star-bucks original blend coffee"
+            tools:layout_editor_absoluteX="46dp"
+            tools:layout_editor_absoluteY="390dp" />
+    </LinearLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.838"
+        android:text="Reordeer"
+        android:textColor="@color/black"
+        android:backgroundTint="@color/grey"/>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.908"
+        android:text="View Biome"
+        android:textColor="@color/black"
+        android:backgroundTint="@color/grey"/>
+</androidx.constraintlayout.widget.ConstraintLayout>
