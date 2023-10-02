@@ -38,7 +38,7 @@ The following EXTRA features are implemented:
 
 I have chosen to duplicate the following layout from the **DoorDash** app:
 
-<img src='https://ibb.co/QF8gRzD' title='Chosen Screenshot' width='' alt='Chosen Screenshot' />
+<img src='https://i.imgur.com/ZMU067W.png' title='Chosen Screenshot' width='' alt='Chosen Screenshot' />
 
 ## Video Demo
 
